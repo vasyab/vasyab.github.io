@@ -66,6 +66,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1b16ebb09bd9e390a3d60395eb21e6aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a155b72b30930d36ee79ac1e08628ad6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_unity_heap_crawler_1_1_heap_snapshot_collector.html">HeapSnapshotCollector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unity_heap_crawler_1_1_heap_snapshot_collector.html#a155b72b30930d36ee79ac1e08628ad6d">AddTrackedTypes</a> ([NotNull] params Type[] types)</td></tr>
 <tr class="separator:a155b72b30930d36ee79ac1e08628ad6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35698318c116a4d870ca216cdd142f77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html">CrawlSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unity_heap_crawler_1_1_heap_snapshot_collector.html#a35698318c116a4d870ca216cdd142f77">AddRootsGroup</a> ([NotNull] string filename, [NotNull] string caption, <a class="el" href="namespace_unity_heap_crawler.html#a2eca25038f6569c49dc59cd7f33d21a6">CrawlOrder</a> order, params object[] roots)</td></tr>
+<tr class="separator:a35698318c116a4d870ca216cdd142f77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16c04100d5d0e5aa75cd8a1a9fdcf939"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html">CrawlSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unity_heap_crawler_1_1_heap_snapshot_collector.html#a16c04100d5d0e5aa75cd8a1a9fdcf939">AddUnityRootsGroup&lt; T &gt;</a> ([NotNull] string filename, [NotNull] string caption, <a class="el" href="namespace_unity_heap_crawler.html#a2eca25038f6569c49dc59cd7f33d21a6">CrawlOrder</a> order)</td></tr>
+<tr class="separator:a16c04100d5d0e5aa75cd8a1a9fdcf939"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affa897a00233a01921fbe7356b5cd116"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_unity_heap_crawler_1_1_heap_snapshot_collector.html">HeapSnapshotCollector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unity_heap_crawler_1_1_heap_snapshot_collector.html#affa897a00233a01921fbe7356b5cd116">SetMinTypeSize</a> (int size)</td></tr>
 <tr class="separator:affa897a00233a01921fbe7356b5cd116"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb8247c9e5861198c82818e893da85b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_unity_heap_crawler_1_1_heap_snapshot_collector.html">HeapSnapshotCollector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unity_heap_crawler_1_1_heap_snapshot_collector.html#adb8247c9e5861198c82818e893da85b2">SetSizeFormat</a> (SizeFormat format)</td></tr>
@@ -76,20 +80,29 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a29fe5de1d4b96ee17104ad651bbff647"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html">CrawlSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unity_heap_crawler_1_1_heap_snapshot_collector.html#a29fe5de1d4b96ee17104ad651bbff647">CustomRootsSettings</a> = CrawlSettings.CreateCustomRoots()</td></tr>
-<tr class="memdesc:a29fe5de1d4b96ee17104ad651bbff647"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html" title="Output settings for crawling result - memory tree. ">CrawlSettings</a> for custom defined roots.  <a href="#a29fe5de1d4b96ee17104ad651bbff647">More...</a><br /></td></tr>
-<tr class="separator:a29fe5de1d4b96ee17104ad651bbff647"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea08ca94379730bc666e5c6dfd033f44"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html">CrawlSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unity_heap_crawler_1_1_heap_snapshot_collector.html#aea08ca94379730bc666e5c6dfd033f44">StaticFieldsSettings</a> = CrawlSettings.CreateStaticFields()</td></tr>
+<tr class="memitem:ab988066c642f11dff73f20828f08a207"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html">CrawlSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unity_heap_crawler_1_1_heap_snapshot_collector.html#ab988066c642f11dff73f20828f08a207">UserRootsSettings</a></td></tr>
+<tr class="memdesc:ab988066c642f11dff73f20828f08a207"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html" title="Output settings for crawling result - memory tree. ">CrawlSettings</a> for user defined roots.  <a href="#ab988066c642f11dff73f20828f08a207">More...</a><br /></td></tr>
+<tr class="separator:ab988066c642f11dff73f20828f08a207"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea08ca94379730bc666e5c6dfd033f44"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html">CrawlSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unity_heap_crawler_1_1_heap_snapshot_collector.html#aea08ca94379730bc666e5c6dfd033f44">StaticFieldsSettings</a></td></tr>
 <tr class="memdesc:aea08ca94379730bc666e5c6dfd033f44"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html" title="Output settings for crawling result - memory tree. ">CrawlSettings</a> for static fields in all types.  <a href="#aea08ca94379730bc666e5c6dfd033f44">More...</a><br /></td></tr>
 <tr class="separator:aea08ca94379730bc666e5c6dfd033f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ff57a7b473b49eba53a80b05799eec5"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html">CrawlSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unity_heap_crawler_1_1_heap_snapshot_collector.html#a9ff57a7b473b49eba53a80b05799eec5">HierarchySettings</a> = CrawlSettings.CreateHierarchy()</td></tr>
+<tr class="memitem:a9ff57a7b473b49eba53a80b05799eec5"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html">CrawlSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unity_heap_crawler_1_1_heap_snapshot_collector.html#a9ff57a7b473b49eba53a80b05799eec5">HierarchySettings</a></td></tr>
 <tr class="memdesc:a9ff57a7b473b49eba53a80b05799eec5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html" title="Output settings for crawling result - memory tree. ">CrawlSettings</a> for GameObjects in scene hierarchy.  <a href="#a9ff57a7b473b49eba53a80b05799eec5">More...</a><br /></td></tr>
 <tr class="separator:a9ff57a7b473b49eba53a80b05799eec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07a2c539c46dbcda62273c25b3df3f04"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html">CrawlSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unity_heap_crawler_1_1_heap_snapshot_collector.html#a07a2c539c46dbcda62273c25b3df3f04">UnityObjectsSettings</a> = CrawlSettings.CreateUnityObjects()</td></tr>
-<tr class="memdesc:a07a2c539c46dbcda62273c25b3df3f04"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html" title="Output settings for crawling result - memory tree. ">CrawlSettings</a> for all other Unity objects (ScriptableObject, Texture, Material, etc). <br />
-<br />
+<tr class="memitem:a15c927e7fcd0a9d9966d760244f7797f"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html">CrawlSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unity_heap_crawler_1_1_heap_snapshot_collector.html#a15c927e7fcd0a9d9966d760244f7797f">ScriptableObjectsSettings</a></td></tr>
+<tr class="memdesc:a15c927e7fcd0a9d9966d760244f7797f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html" title="Output settings for crawling result - memory tree. ">CrawlSettings</a> for all ScriptableObjects. <br />
+  <a href="#a15c927e7fcd0a9d9966d760244f7797f">More...</a><br /></td></tr>
+<tr class="separator:a15c927e7fcd0a9d9966d760244f7797f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55fcd56ac04a9224debd962cd4e6dfc8"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html">CrawlSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unity_heap_crawler_1_1_heap_snapshot_collector.html#a55fcd56ac04a9224debd962cd4e6dfc8">PrefabsSettings</a></td></tr>
+<tr class="memdesc:a55fcd56ac04a9224debd962cd4e6dfc8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html" title="Output settings for crawling result - memory tree. ">CrawlSettings</a> for all loaded Prefabs.  <a href="#a55fcd56ac04a9224debd962cd4e6dfc8">More...</a><br /></td></tr>
+<tr class="separator:a55fcd56ac04a9224debd962cd4e6dfc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07a2c539c46dbcda62273c25b3df3f04"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html">CrawlSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unity_heap_crawler_1_1_heap_snapshot_collector.html#a07a2c539c46dbcda62273c25b3df3f04">UnityObjectsSettings</a></td></tr>
+<tr class="memdesc:a07a2c539c46dbcda62273c25b3df3f04"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html" title="Output settings for crawling result - memory tree. ">CrawlSettings</a> for all other Unity objects (Texture, Material, etc). <br />
   <a href="#a07a2c539c46dbcda62273c25b3df3f04">More...</a><br /></td></tr>
 <tr class="separator:a07a2c539c46dbcda62273c25b3df3f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad10aab211d996726840a3e8124ab4fad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unity_heap_crawler_1_1_heap_snapshot_collector.html#ad10aab211d996726840a3e8124ab4fad">DifferentialMode</a> = true</td></tr>
+<tr class="memdesc:ad10aab211d996726840a3e8124ab4fad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only show new objects (compared to previous snapshot) in all reports  <a href="#ad10aab211d996726840a3e8124ab4fad">More...</a><br /></td></tr>
+<tr class="separator:ad10aab211d996726840a3e8124ab4fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Tool for crawling mono heap and collecting memory usage. </p>
@@ -164,6 +177,60 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a35698318c116a4d870ca216cdd142f77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35698318c116a4d870ca216cdd142f77">&#9670;&nbsp;</a></span>AddRootsGroup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html">CrawlSettings</a> UnityHeapCrawler.HeapSnapshotCollector.AddRootsGroup </td>
+          <td>(</td>
+          <td class="paramtype">[NotNull] string&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">[NotNull] string&#160;</td>
+          <td class="paramname"><em>caption</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_unity_heap_crawler.html#a2eca25038f6569c49dc59cd7f33d21a6">CrawlOrder</a>&#160;</td>
+          <td class="paramname"><em>order</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">params object []&#160;</td>
+          <td class="paramname"><em>roots</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p></p>
+<p>Add custom roots crawling group. Results will be wrtitten to a seperate file.</p>
+<p>Explicit objects version.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Filename for group output</td></tr>
+    <tr><td class="paramname">caption</td><td>Group caption</td></tr>
+    <tr><td class="paramname">order</td><td>Crawling priority</td></tr>
+    <tr><td class="paramname">roots</td><td>Root objects</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Crawl settings for further configuration</dd></dl>
 
 </div>
 </div>
@@ -256,6 +323,53 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a16c04100d5d0e5aa75cd8a1a9fdcf939"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16c04100d5d0e5aa75cd8a1a9fdcf939">&#9670;&nbsp;</a></span>AddUnityRootsGroup&lt; T &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html">CrawlSettings</a> UnityHeapCrawler.HeapSnapshotCollector.AddUnityRootsGroup&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">[NotNull] string&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">[NotNull] string&#160;</td>
+          <td class="paramname"><em>caption</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_unity_heap_crawler.html#a2eca25038f6569c49dc59cd7f33d21a6">CrawlOrder</a>&#160;</td>
+          <td class="paramname"><em>order</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p></p>
+<p>Add custom roots crawling group. Results will be wrtitten to a seperate file.</p>
+<p>All Unity objects of specified type are included in the group.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Filename for group output</td></tr>
+    <tr><td class="paramname">caption</td><td>Group caption</td></tr>
+    <tr><td class="paramname">order</td><td>Crawling priority</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Crawl settings for further configuration</dd></dl>
+
+</div>
+</div>
 <a id="affa897a00233a01921fbe7356b5cd116"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#affa897a00233a01921fbe7356b5cd116">&#9670;&nbsp;</a></span>SetMinTypeSize()</h2>
 
@@ -336,20 +450,20 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a29fe5de1d4b96ee17104ad651bbff647"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29fe5de1d4b96ee17104ad651bbff647">&#9670;&nbsp;</a></span>CustomRootsSettings</h2>
+<a id="ad10aab211d996726840a3e8124ab4fad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad10aab211d996726840a3e8124ab4fad">&#9670;&nbsp;</a></span>DifferentialMode</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">readonly <a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html">CrawlSettings</a> UnityHeapCrawler.HeapSnapshotCollector.CustomRootsSettings = CrawlSettings.CreateCustomRoots()</td>
+          <td class="memname">bool UnityHeapCrawler.HeapSnapshotCollector.DifferentialMode = true</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html" title="Output settings for crawling result - memory tree. ">CrawlSettings</a> for custom defined roots. </p>
-<p>Modify them after construction to change output format or disable crawling. Be careful when reducing filtering - large crawl trees will affect memory consumption. </p>
+<p>Only show new objects (compared to previous snapshot) in all reports </p>
+<p>Useful to find memory leaks </p>
 
 </div>
 </div>
@@ -360,12 +474,47 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">readonly <a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html">CrawlSettings</a> UnityHeapCrawler.HeapSnapshotCollector.HierarchySettings = CrawlSettings.CreateHierarchy()</td>
+          <td class="memname">readonly <a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html">CrawlSettings</a> UnityHeapCrawler.HeapSnapshotCollector.HierarchySettings</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p><a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html" title="Output settings for crawling result - memory tree. ">CrawlSettings</a> for GameObjects in scene hierarchy. </p>
+<p>Modify them after construction to change output format or disable crawling. Be careful when reducing filtering - large crawl trees will affect memory consumption. </p>
+
+</div>
+</div>
+<a id="a55fcd56ac04a9224debd962cd4e6dfc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55fcd56ac04a9224debd962cd4e6dfc8">&#9670;&nbsp;</a></span>PrefabsSettings</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly <a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html">CrawlSettings</a> UnityHeapCrawler.HeapSnapshotCollector.PrefabsSettings</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html" title="Output settings for crawling result - memory tree. ">CrawlSettings</a> for all loaded Prefabs. </p>
+<p>Modify them after construction to change output format or disable crawling. Be careful when reducing filtering - large crawl trees will affect memory consumption. </p>
+
+</div>
+</div>
+<a id="a15c927e7fcd0a9d9966d760244f7797f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15c927e7fcd0a9d9966d760244f7797f">&#9670;&nbsp;</a></span>ScriptableObjectsSettings</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly <a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html">CrawlSettings</a> UnityHeapCrawler.HeapSnapshotCollector.ScriptableObjectsSettings</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html" title="Output settings for crawling result - memory tree. ">CrawlSettings</a> for all ScriptableObjects. <br />
+ </p>
 <p>Modify them after construction to change output format or disable crawling. Be careful when reducing filtering - large crawl trees will affect memory consumption. </p>
 
 </div>
@@ -377,7 +526,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">readonly <a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html">CrawlSettings</a> UnityHeapCrawler.HeapSnapshotCollector.StaticFieldsSettings = CrawlSettings.CreateStaticFields()</td>
+          <td class="memname">readonly <a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html">CrawlSettings</a> UnityHeapCrawler.HeapSnapshotCollector.StaticFieldsSettings</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -394,20 +543,36 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">readonly <a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html">CrawlSettings</a> UnityHeapCrawler.HeapSnapshotCollector.UnityObjectsSettings = CrawlSettings.CreateUnityObjects()</td>
+          <td class="memname">readonly <a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html">CrawlSettings</a> UnityHeapCrawler.HeapSnapshotCollector.UnityObjectsSettings</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html" title="Output settings for crawling result - memory tree. ">CrawlSettings</a> for all other Unity objects (ScriptableObject, Texture, Material, etc). <br />
-<br />
+<p><a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html" title="Output settings for crawling result - memory tree. ">CrawlSettings</a> for all other Unity objects (Texture, Material, etc). <br />
  </p>
 <p>Modify them after construction to change output format or disable crawling. Be careful when reducing filtering - large crawl trees will affect memory consumption. </p>
 
 </div>
 </div>
+<a id="ab988066c642f11dff73f20828f08a207"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab988066c642f11dff73f20828f08a207">&#9670;&nbsp;</a></span>UserRootsSettings</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly <a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html">CrawlSettings</a> UnityHeapCrawler.HeapSnapshotCollector.UserRootsSettings</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html" title="Output settings for crawling result - memory tree. ">CrawlSettings</a> for user defined roots. </p>
+<p>Modify them after construction to change output format or disable crawling. Be careful when reducing filtering - large crawl trees will affect memory consumption. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/other/UnityHeapCrawler/Assets/UnityHeapCrawler/HeapSnapshotCollector.cs</li>
+<li>Assets/UnityHeapCrawler/HeapSnapshotCollector.cs</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -43,9 +43,11 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#properties">Properties</a> &#124;
 <a href="class_unity_heap_crawler_1_1_crawl_settings-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">UnityHeapCrawler.CrawlSettings Class Reference</div>  </div>
@@ -57,24 +59,33 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac2a8244509ef0f434869a90b12157d09"><td class="memItemLeft" align="right" valign="top"><a id="ac2a8244509ef0f434869a90b12157d09"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CrawlSettings</b> ([NotNull] string filename, [NotNull] string caption, float startProgress, float endProgress)</td></tr>
-<tr class="separator:ac2a8244509ef0f434869a90b12157d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7019cc5cc421af55848f6a54f3a11cb"><td class="memItemLeft" align="right" valign="top"><a id="aa7019cc5cc421af55848f6a54f3a11cb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CrawlSettings</b> ([NotNull] string filename, [NotNull] string caption, [NotNull] Action rootsCollector, <a class="el" href="namespace_unity_heap_crawler.html#a2eca25038f6569c49dc59cd7f33d21a6">CrawlOrder</a> order)</td></tr>
+<tr class="separator:aa7019cc5cc421af55848f6a54f3a11cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21db3cc1bad5ae8316a8d9ac29fea531"><td class="memItemLeft" align="right" valign="top"><a id="a21db3cc1bad5ae8316a8d9ac29fea531"></a>
+override string&#160;</td><td class="memItemRight" valign="bottom"><b>ToString</b> ()</td></tr>
+<tr class="separator:a21db3cc1bad5ae8316a8d9ac29fea531"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a66dc9f5616790a150ef58c8c8b52c85c"><td class="memItemLeft" align="right" valign="top"><a id="a66dc9f5616790a150ef58c8c8b52c85c"></a>
-static <a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html">CrawlSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateCustomRoots</b> ()</td></tr>
-<tr class="separator:a66dc9f5616790a150ef58c8c8b52c85c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a061b55f41ca993cce06ac730b69f885f"><td class="memItemLeft" align="right" valign="top"><a id="a061b55f41ca993cce06ac730b69f885f"></a>
-static <a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html">CrawlSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateStaticFields</b> ()</td></tr>
-<tr class="separator:a061b55f41ca993cce06ac730b69f885f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad99a77cd1e278edc2d4cdcdaadb19841"><td class="memItemLeft" align="right" valign="top"><a id="ad99a77cd1e278edc2d4cdcdaadb19841"></a>
-static <a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html">CrawlSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateHierarchy</b> ()</td></tr>
-<tr class="separator:ad99a77cd1e278edc2d4cdcdaadb19841"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18537e3fca1467f593c14ab86c052543"><td class="memItemLeft" align="right" valign="top"><a id="a18537e3fca1467f593c14ab86c052543"></a>
-static <a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html">CrawlSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateUnityObjects</b> ()</td></tr>
-<tr class="separator:a18537e3fca1467f593c14ab86c052543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae94212fe5680053caed094ad9cd15269"><td class="memItemLeft" align="right" valign="top"><a id="ae94212fe5680053caed094ad9cd15269"></a>
+static <a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html">CrawlSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateUserRoots</b> ([NotNull] Action objectsProvider)</td></tr>
+<tr class="separator:ae94212fe5680053caed094ad9cd15269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c18eb1a987564b705db35cdd4bd7549"><td class="memItemLeft" align="right" valign="top"><a id="a5c18eb1a987564b705db35cdd4bd7549"></a>
+static <a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html">CrawlSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateStaticFields</b> ([NotNull] Action objectsProvider)</td></tr>
+<tr class="separator:a5c18eb1a987564b705db35cdd4bd7549"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59fb58ecabbf06a7df68868379a8ddd2"><td class="memItemLeft" align="right" valign="top"><a id="a59fb58ecabbf06a7df68868379a8ddd2"></a>
+static <a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html">CrawlSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateHierarchy</b> ([NotNull] Action objectsProvider)</td></tr>
+<tr class="separator:a59fb58ecabbf06a7df68868379a8ddd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ee3bd0870c385f42f2ba613dfc7874e"><td class="memItemLeft" align="right" valign="top"><a id="a3ee3bd0870c385f42f2ba613dfc7874e"></a>
+static <a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html">CrawlSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateScriptableObjects</b> ([NotNull] Action objectsProvider)</td></tr>
+<tr class="separator:a3ee3bd0870c385f42f2ba613dfc7874e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1ed975ce68853374d3bac86803b0d8d"><td class="memItemLeft" align="right" valign="top"><a id="aa1ed975ce68853374d3bac86803b0d8d"></a>
+static <a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html">CrawlSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreatePrefabs</b> ([NotNull] Action objectsProvider)</td></tr>
+<tr class="separator:aa1ed975ce68853374d3bac86803b0d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab871999ff2e8dcd55280ebdfb2decf84"><td class="memItemLeft" align="right" valign="top"><a id="ab871999ff2e8dcd55280ebdfb2decf84"></a>
+static <a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html">CrawlSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateUnityObjects</b> ([NotNull] Action objectsProvider)</td></tr>
+<tr class="separator:ab871999ff2e8dcd55280ebdfb2decf84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -90,6 +101,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>Enabled</b> = true</t
 <tr class="memitem:a4409ba071a23769ac15d1aafc41c7f5d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html#a4409ba071a23769ac15d1aafc41c7f5d">PrintOnlyGameObjects</a> = false</td></tr>
 <tr class="memdesc:a4409ba071a23769ac15d1aafc41c7f5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print only GameObjects in hierarchy mode.  <a href="#a4409ba071a23769ac15d1aafc41c7f5d">More...</a><br /></td></tr>
 <tr class="separator:a4409ba071a23769ac15d1aafc41c7f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa737b1b0aa49a259f2be297c15556d25"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html#aa737b1b0aa49a259f2be297c15556d25">IncludeAllUnityTypes</a> = false</td></tr>
+<tr class="memdesc:aa737b1b0aa49a259f2be297c15556d25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Follow references to all unity objects or leave them for a later crawling stage  <a href="#aa737b1b0aa49a259f2be297c15556d25">More...</a><br /></td></tr>
+<tr class="separator:aa737b1b0aa49a259f2be297c15556d25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97c11ed983fa83589fc1e6eb7f7b2239"><td class="memItemLeft" align="right" valign="top">List&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html#a97c11ed983fa83589fc1e6eb7f7b2239">IncludedUnityTypes</a> = new List&lt;Type&gt;()</td></tr>
+<tr class="memdesc:a97c11ed983fa83589fc1e6eb7f7b2239"><td class="mdescLeft">&#160;</td><td class="mdescRight">Follow references to unity objects of specific types  <a href="#a97c11ed983fa83589fc1e6eb7f7b2239">More...</a><br /></td></tr>
+<tr class="separator:a97c11ed983fa83589fc1e6eb7f7b2239"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f1ca0fb15608353e8ef15aa918ebb30"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html#a2f1ca0fb15608353e8ef15aa918ebb30">MaxDepth</a> = 0</td></tr>
 <tr class="memdesc:a2f1ca0fb15608353e8ef15aa918ebb30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum children depth in memory tree. 0 - infinity.  <a href="#a2f1ca0fb15608353e8ef15aa918ebb30">More...</a><br /></td></tr>
 <tr class="separator:a2f1ca0fb15608353e8ef15aa918ebb30"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -99,6 +116,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>Enabled</b> = true</t
 <tr class="memitem:ab4229390289b68204c43e240c65e594b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html#ab4229390289b68204c43e240c65e594b">MinItemSize</a> = 1024</td></tr>
 <tr class="memdesc:ab4229390289b68204c43e240c65e594b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum object size to be included in memory tree.  <a href="#ab4229390289b68204c43e240c65e594b">More...</a><br /></td></tr>
 <tr class="separator:ab4229390289b68204c43e240c65e594b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:abfb4275433f75bbfcc24c2865dc2de81"><td class="memItemLeft" align="right" valign="top"><a id="abfb4275433f75bbfcc24c2865dc2de81"></a>
+static IComparer&lt; <a class="el" href="class_unity_heap_crawler_1_1_crawl_settings.html">CrawlSettings</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>PriorityComparer</b> = new PriorityRelationalComparer()<code> [get]</code></td></tr>
+<tr class="separator:abfb4275433f75bbfcc24c2865dc2de81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Output settings for crawling result - memory tree. </p>
@@ -116,6 +139,38 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>Enabled</b> = true</t
 </div><div class="memdoc">
 
 <p>Resulting memory tree file name. </p>
+
+</div>
+</div>
+<a id="aa737b1b0aa49a259f2be297c15556d25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa737b1b0aa49a259f2be297c15556d25">&#9670;&nbsp;</a></span>IncludeAllUnityTypes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool UnityHeapCrawler.CrawlSettings.IncludeAllUnityTypes = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Follow references to all unity objects or leave them for a later crawling stage </p>
+
+</div>
+</div>
+<a id="a97c11ed983fa83589fc1e6eb7f7b2239"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97c11ed983fa83589fc1e6eb7f7b2239">&#9670;&nbsp;</a></span>IncludedUnityTypes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;Type&gt; UnityHeapCrawler.CrawlSettings.IncludedUnityTypes = new List&lt;Type&gt;()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Follow references to unity objects of specific types </p>
 
 </div>
 </div>
@@ -200,7 +255,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>Enabled</b> = true</t
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/other/UnityHeapCrawler/Assets/UnityHeapCrawler/CrawlSettings.cs</li>
+<li>Assets/UnityHeapCrawler/CrawlSettings.cs</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
